@@ -1,0 +1,16 @@
+<div class="make-list-component">
+  <input class="qa-filter-input filter-input" [(ngModel)]="filterValue" placeholder="Find a make">
+
+  <span *ngIf="hasError" class="c-message qa-error-message">{{messages.error}}</span>
+  <span *ngIf="!hasError && !makes.length" class="c-message qa-loading-message">{{messages.loading}}</span>
+  <span *ngIf="!hasError && !getFilteredMakes().length && makes.length" class="c-message qa-no-results-message">{{messages.noResults}}</span>
+
+  <ul class="qa-make-list make-list">
+    <li
+      class="qa-make-list__item make-list__item"
+      *ngFor="let make of getFilteredMakes()">
+      <make-preview [make]="make"></make-preview>
+    </li>
+  </ul>
+
+</div>

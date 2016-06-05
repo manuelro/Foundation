@@ -1,0 +1,17 @@
+.make-name {
+  width: 100%; }
+
+.make-name__link {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  border-radius: 3px; }
+  .make-name__link.router-link-active {
+    background-color: #e6e6e6; }
+
+@media (min-width: 600px) {
+  .make-name {
+    width: auto;
+    float: left;
+    margin: 0.5em 2em 0.5em 0; } }

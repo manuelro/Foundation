@@ -1,0 +1,14 @@
+<div class="qa-make-details-component">
+  <div class="toolbar">
+    <div class="toolbar__title">{{make.name}}</div>
+    <div class="toolbar__actions">
+      <a class="actions__btn" [routerLink]="['/']">Home</a>
+      <a class="actions__btn" (click)="hasSidebar = !hasSidebar">Makes ({{hasSidebar ? "hide" : "show"}})</a>
+    </div>
+  </div>
+
+  <app-sidebar class="sidebar" [class.enabled]="hasSidebar"></app-sidebar>
+
+  <h2>Model list for <i>{{make.name}}</i></h2>
+  <model-list [models]="make.models"></model-list>
+</div>

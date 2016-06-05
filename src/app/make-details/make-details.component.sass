@@ -1,0 +1,36 @@
+$toolbar-height: 40px
+
+.toolbar
+  background-color: lighten(black, 95%)
+  padding: 0
+  overflow: hidden
+  height: $toolbar-height
+.toolbar__title
+  float: left
+  display: block
+  line-height: $toolbar-height
+  margin: 0
+  padding: 0 0.5em
+  font-size: 1em
+.toolbar__actions
+  float: right
+  line-height: $toolbar-height
+.actions__btn
+  margin-right: 5px
+  border: 1px solid silver
+  padding: 0 0.7em
+  color: black
+  font-size: 0.8em
+  text-decoration: none
+  background-color: white
+  display: inline-block
+  line-height: $toolbar-height - 14
+
+.sidebar
+  height: 0
+  overflow: hidden
+  display: inline-block
+  width: 100%
+  margin-top: 10px
+  &.enabled
+    height: auto
