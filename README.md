@@ -14,7 +14,9 @@ The project is composed of hierachical classes (components, directives, pipes an
 ![alt tag](https://raw.githubusercontent.com/manuelro/Foundation/master/assets/graph.png)
 
 ##Running tests
-Base on [Angular CLI](https://github.com/angular/angular-cli) you can run unit tests and e2e tests using the following commands:
+Based on [Angular CLI](https://github.com/angular/angular-cli) you can run unit tests and e2e tests using the following commands:
+###Starting the server
+`$ ng serve`
 ###Unit tests
 `$ ng test`
 ###e2e tests
