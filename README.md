@@ -18,7 +18,7 @@ Based on [Angular CLI](https://github.com/angular/angular-cli) you can run unit 
 ###Starting the server
 `$ ng serve`
 ###Unit tests
-`$ ng test`
+`$ ng test --build=false`
 ###e2e tests
 `$ ng e2e`
 
